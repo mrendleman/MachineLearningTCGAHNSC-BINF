@@ -1,7 +1,10 @@
 # MachineLearningTCGAHNSC-BINF
 Supplementary materials and code for the BMC Bioinformatics journal article "Machine learning with the TCGA-HNSC dataset: Improving performance by addressing inconsistency, sparsity, and high-dimensionality" by authors Michael C. Rendleman, B.S.E.; John M. Buatti, MD; Terry A. Braun, Ph.D.; Brian J. Smith, Ph.D.; Bart Brown; Chibuzo Nwakama; Reinhard Beichel, Ph.D.; Thomas L. Casavant, Ph.D.
 
-# Data
+To install the necessary dependencies for the R scripts, we supply the ```install_prereqs.R``` script.
+Any questions about this analysis or the manuscript can be sent to michael-rendleman@uiowa.edu.
+
+# Supplied Data
 
 ## Clinical Data
 Preprocessed pre-imputation and post-imputation datasets are provided in .arff format (WEKA's attribute-relation file format) in ```clinical_NO_imp.arff``` and ```clinical_rf_imp.arff```, respectively. Importance values for these datasets are provided in ```raw_importance_noimp.csv``` and ```raw_importance_rfimp.csv```.
@@ -33,4 +36,3 @@ SPC gene weights can be obtained from the ```SPCA_generation.r``` file. For our 
 After obtaining the genes comprising the SPC under consideration, GOEA can be performed here: http://geneontology.org/page/go-enrichment-analysis
 
 
-Any questions about this analysis or the manuscript can be sent to michael-rendleman@uiowa.edu.

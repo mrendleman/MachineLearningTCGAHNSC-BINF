@@ -1,5 +1,5 @@
-# This script is concerned with calcuating Sparse Principal Components,
-# examining their explained variances, and 
+# This script is concerned with calcuating Sparse Principal Components
+# and examining their loadings and explained variances
 
 library(dplyr)
 library(elasticnet)
