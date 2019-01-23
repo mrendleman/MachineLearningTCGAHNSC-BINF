@@ -1,4 +1,3 @@
-
 library("doParallel")
 library("caret")
 library("recipes")
@@ -56,3 +55,7 @@ load("model_fits/spca50_fits_txgrade_rf.Rda") # modify this line to load the des
 fits$wsrf
 fits$rf
 fits$cforest
+
+# AUROC values and standard deviations can be obtained like so:
+fits$wsrf$results$ROC
+fits$wsrf$results$ROCSD
