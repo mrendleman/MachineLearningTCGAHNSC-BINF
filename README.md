@@ -21,7 +21,7 @@ Transformations of RNA expression data via SPCA can be found in ```spcaXXcompone
 # Experiments
 
 ## Treatment variable imputation experiments
-Classifier training on pre- and post-imputation data can be done in WEKA as described in our manuscript: (link to be added upon publication)
+Classifier training on pre- and post-imputation data can be done in WEKA as described in our manuscript: https://pubmed.ncbi.nlm.nih.gov/31208324/
 
 Importance values for these variables can be calculated with ```CIRF_importance.r```, though the raw (pre_averaged) results can be examined in the ```raw_importance_noimp.csv``` and ```raw_importance_rfimp.csv``` files.
 
@@ -32,7 +32,7 @@ Classifier training on the full set of solid-tumor RNA expression data can be re
 Training of classifiers, calculations of variable importance, and training timing for the SPCA-transformed data can be performed using the ```SPCA_training_and_importance.R``` script, though the resulting models are also available in the ```model_fits/``` directory. 
 
 ## Gene Ontology Enrichment Analysis
-SPC gene weights can be obtained from the ```SPCA_generation.r``` file. For our analysis, genes with absolute weight greater than 0.1 are considering contributors. 
+SPC gene weights can be obtained from the ```SPCA_generation.r``` file. For our analysis, genes with absolute weight greater than 0.1 are considered contributors. 
 After obtaining the genes comprising the SPC under consideration, GOEA can be performed here: http://geneontology.org/page/go-enrichment-analysis
 
 
